@@ -643,10 +643,10 @@ function subscribe(event) {
 ```
 ## OUTPUT
 
-![alt text](<../Screenshot 2026-11-02 155107.png>)
-![alt text](<../Screenshot 2026-11-02 155127.png>)
-![alt text](<../Screenshot 2026-11-02 155141.png>)
-![alt text](<../Screenshot 2026-11-02 160045.png>)
+![alt text](<Screenshot 2026-11-02 155107.png>)
+![alt text](<Screenshot 2026-11-02 155127.png>)
+![alt text](<Screenshot 2026-11-02 155141.png>)
+![alt text](<Screenshot 2026-11-02 160045.png>)
 
 ## RESULT
 The program for creating commercial website using CSS Flexbox is executed successfully.
