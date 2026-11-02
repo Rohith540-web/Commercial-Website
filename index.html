@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>ShopEase</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#offers">Offers</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="cart">🛒 Cart: <span id="cart-count">0</span></div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div>
+        <h2>Discover Your Style</h2>
+        <p>Find the best products at amazing prices.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<!-- Categories -->
+<section id="categories">
+    <h2>Shop By Categories</h2>
+    <div class="flex-container">
+        <div class="category">👕<h3>Fashion</h3></div>
+        <div class="category">📱<h3>Electronics</h3></div>
+        <div class="category">⌚<h3>Watches</h3></div>
+        <div class="category">👟<h3>Footwear</h3></div>
+        <div class="category">🏠<h3>Home Decor</h3></div>
+        <div class="category">🎒<h3>Accessories</h3></div>
+    </div>
+</section>
+
+<!-- Offers -->
+<section id="offers" class="offers">
+    <h2>Today's Special Offers</h2>
+    <div class="offer-container">
+        <div class="offer">
+            <h3>Fashion Sale</h3>
+            <p>Up to 50% OFF</p>
+            <a href="#products">Explore Now</a>
+        </div>
+        <div class="offer">
+            <h3>Electronics Sale</h3>
+            <p>Up to 40% OFF</p>
+            <a href="#products">Explore Now</a>
+        </div>
+        <div class="offer">
+            <h3>Home Essentials</h3>
+            <p>Up to 30% OFF</p>
+            <a href="#products">Explore Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- Trending Products -->
+<section id="products">
+    <h2>Trending Products</h2>
+    <div class="product-container">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Watch">
+            <h3>Smart Watch</h3>
+            <p>₹1,499</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Headphones">
+            <h3>Wireless Headphones</h3>
+            <p>₹999</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500" alt="Camera">
+            <h3>Digital Camera</h3>
+            <p>₹5,499</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Shoes">
+            <h3>Sports Shoes</h3>
+            <p>₹1,299</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Best Sellers -->
+<section>
+    <h2>Best Selling Products</h2>
+    <div class="product-container">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500" alt="Smart Watch">
+            <h3>Premium Smart Watch</h3>
+            <p>₹2,499</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500" alt="Fashion">
+            <h3>Fashion Collection</h3>
+            <p>₹1,899</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=500" alt="Clothes">
+            <h3>Casual Clothing</h3>
+            <p>₹799</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=500" alt="Chair">
+            <h3>Modern Home Chair</h3>
+            <p>₹3,499</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Discount Banner -->
+<section class="discount">
+    <h2>Mega Shopping Festival</h2>
+    <p>Get up to 60% discount on selected products!</p>
+    <a href="#products" class="btn">Grab Your Deal</a>
+</section>
+
+<!-- New Arrivals -->
+<section>
+    <h2>New Arrivals</h2>
+    <div class="product-container">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500" alt="Shoes">
+            <h3>Running Shoes</h3>
+            <p>₹1,599</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?w=500" alt="Earbuds">
+            <h3>Wireless Earbuds</h3>
+            <p>₹1,199</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Sneakers">
+            <h3>Casual Sneakers</h3>
+            <p>₹1,799</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Headphones">
+            <h3>Premium Headphones</h3>
+            <p>₹2,199</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about">
+    <h2>About ShopEase</h2>
+    <p>
+        ShopEase is an online shopping destination designed to make
+        shopping simple, convenient and enjoyable. We offer a wide
+        range of fashion, electronics, accessories and home products
+        at affordable prices.
+    </p>
+</section>
+
+<!-- Customer Reviews -->
+<section class="reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="review-container">
+        <div class="review">
+            <h3>Customer 1</h3>
+            <p>"Great products and excellent shopping experience!"</p>
+            ⭐⭐⭐⭐⭐
+        </div>
+        <div class="review">
+            <h3>Customer 2</h3>
+            <p>"Affordable prices and a wonderful collection."</p>
+            ⭐⭐⭐⭐⭐
+        </div>
+        <div class="review">
+            <h3>Customer 3</h3>
+            <p>"Easy to use website with quality products."</p>
+            ⭐⭐⭐⭐⭐
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get updates about new products and special offers.</p>
+    <form onsubmit="subscribe(event)">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+    <h2>ShopEase</h2>
+    <p>Your one-stop destination for online shopping.</p>
+    <p>Email: support@shopease.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Address: Chennai, Tamil Nadu, India</p>
+    <p>© 2026 ShopEase. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

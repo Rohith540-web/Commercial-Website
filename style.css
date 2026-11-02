@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #333;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    color: #facc15;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+.cart {
+    font-weight: bold;
+}
+
+section {
+    padding: 55px 6%;
+}
+
+section h2 {
+    text-align: center;
+    color: #172554;
+    margin-bottom: 30px;
+}
+
+/* Hero */
+.hero {
+    min-height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(120deg, #172554, #2563eb);
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: white;
+}
+
+.hero p {
+    font-size: 19px;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #facc15;
+    color: #172554;
+    padding: 13px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Categories */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category {
+    flex: 1 1 150px;
+    padding: 35px 15px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.category h3 {
+    font-size: 17px;
+    margin-top: 12px;
+}
+
+/* Offers */
+.offers {
+    background: #e8edff;
+}
+
+.offer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.offer {
+    flex: 1 1 220px;
+    background: white;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.offer h3 {
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+.offer p {
+    color: #e11d48;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.offer a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Products */
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.product {
+    flex: 1 1 220px;
+    max-width: 280px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 12px #ddd;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-7px);
+}
+
+.product img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 15px 0 10px;
+}
+
+.product p {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #172554;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+/* Discount */
+.discount {
+    background: linear-gradient(120deg, #1e3a8a, #2563eb);
+    color: white;
+    text-align: center;
+}
+
+.discount h2 {
+    color: white;
+    font-size: 35px;
+}
+
+.discount p {
+    margin-bottom: 25px;
+    font-size: 19px;
+}
+
+/* About */
+.about {
+    background: white;
+    text-align: center;
+}
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* Reviews */
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review {
+    flex: 1 1 220px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.review h3 {
+    margin-bottom: 15px;
+}
+
+.review p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Newsletter */
+.newsletter {
+    background: #e8edff;
+    text-align: center;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 13px;
+    width: 280px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 40px 15px;
+    line-height: 2;
+}
+
+footer h2 {
+    color: #facc15;
+}
+
+/* Responsive design */
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .newsletter input {
+        width: 100%;
+    }
+}
